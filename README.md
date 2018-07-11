@@ -27,8 +27,14 @@ yarn
 yarn android
 ```
 #### iOS
-1. Open the Xcode project
+1. Connect a device or open an emulator
 ```
 yarn ios
 ```
 2. Build and run the app in a simulator (⌘R).
+
+### Run the Test
+1. Run the test
+```
+yarn test
+```
