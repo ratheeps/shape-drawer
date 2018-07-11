@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import colors from "../../../utils/colors";
 
-export  default styles = StyleSheet.create({
+const styles = StyleSheet.create({
     triangle: {
         width: 0,
         height: 0,
@@ -15,3 +15,4 @@ export  default styles = StyleSheet.create({
         borderBottomColor: colors.shape
     }
 });
+export default styles;

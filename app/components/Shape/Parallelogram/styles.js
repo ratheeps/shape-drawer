@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import colors from "../../../utils/colors";
 
-export  default styles = StyleSheet.create({
+const styles = StyleSheet.create({
     parallelogram:{
         marginTop: 300
     },
@@ -23,3 +23,5 @@ export  default styles = StyleSheet.create({
         ],
     }
 });
+
+export default styles;

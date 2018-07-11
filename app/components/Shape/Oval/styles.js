@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import colors from "../../../utils/colors";
 
-export  default styles = StyleSheet.create({
+const styles = StyleSheet.create({
     oval: {
         backgroundColor: colors.shape,
         transform: [
@@ -9,3 +9,4 @@ export  default styles = StyleSheet.create({
         ]
     }
 });
+export default styles;
