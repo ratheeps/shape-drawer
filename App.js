@@ -4,7 +4,7 @@ import {AppHeader, Form} from "./app/components";
 import {Shape} from "./app/components/Shape";
 import {processText} from "./app/helpers/text-processer"
 import {shapeDataValidator, sampleText} from "./app/helpers/validator"
-
+import { Keyboard } from 'react-native';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -21,8 +21,8 @@ export default class App extends React.Component {
     }
 
     process(data) {
+        Keyboard.dismiss();
         let value = data.value;
-        value = "Draw an heptagon with a side length of 200";
         if (value) {
             let shapeData = processText(value);
             let error = shapeDataValidator(shapeData);
