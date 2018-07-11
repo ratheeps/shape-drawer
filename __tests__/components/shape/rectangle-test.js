@@ -1,5 +1,5 @@
 import React from 'react';
-import Rectangle from '../../../app/components/shape/rectangle/index';
+import Rectangle from '../../../app/components/Shape/Rectangle/index';
 
 import renderer from 'react-test-renderer';
 

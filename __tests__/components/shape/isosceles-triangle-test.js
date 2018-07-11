@@ -1,5 +1,5 @@
 import React from 'react';
-import IsoscelesTriangle from '../../../app/components/shape/isosceles-triangle/index';
+import IsoscelesTriangle from '../../../app/components/Shape/IsoscelesTriangle/index';
 
 import renderer from 'react-test-renderer';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Heptagon from '../../../app/components/shape/heptagon/index';
+import Heptagon from '../../../app/components/Shape/Heptagon/index';
 
 import renderer from 'react-test-renderer';
 

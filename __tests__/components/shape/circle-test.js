@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../../../app/components/shape/circle/index';
+import Circle from '../../../app/components/Shape/Circle/index';
 
 import renderer from 'react-test-renderer';
 

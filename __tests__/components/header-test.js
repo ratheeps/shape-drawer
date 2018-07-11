@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../app/components/header/index';
+import Header from '../../app/components/AppHeader/index';
 
 import renderer from 'react-test-renderer';
 

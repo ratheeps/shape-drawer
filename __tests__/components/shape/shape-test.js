@@ -1,5 +1,5 @@
 import React from 'react';
-import Shape from '../../../app/components/shape/index';
+import {Shape} from '../../../app/components/Shape';
 
 import renderer from 'react-test-renderer';
 

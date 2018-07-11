@@ -1,5 +1,5 @@
 import React from 'react';
-import ScaleneTriangle from '../../../app/components/shape/scalene-triangle/index';
+import ScaleneTriangle from '../../../app/components/Shape/ScaleneTriangle/index';
 
 import renderer from 'react-test-renderer';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Square from '../../../app/components/shape/square/index';
+import Square from '../../../app/components/Shape/Square/index';
 
 import renderer from 'react-test-renderer';
 

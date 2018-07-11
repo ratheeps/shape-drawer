@@ -1,5 +1,5 @@
 import React from 'react';
-import Parallelogram from '../../../app/components/shape/parallelogram/index';
+import Parallelogram from '../../../app/components/Shape/Parallelogram/index';
 
 import renderer from 'react-test-renderer';
 

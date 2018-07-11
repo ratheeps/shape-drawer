@@ -1,5 +1,5 @@
 import React from 'react';
-import Pentagon from '../../../app/components/shape/pentagon/index';
+import Pentagon from '../../../app/components/Shape/Pentagon/index';
 
 import renderer from 'react-test-renderer';
 

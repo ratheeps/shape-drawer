@@ -1,8 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import AppHeader from "./app/components/header/index";
-import From from "./app/components/form/index";
-import Shape from "./app/components/shape/index";
+import {AppHeader, Form} from "./app/components";
+import {Shape} from "./app/components/Shape";
 import { processText } from "./app/helpers/text-processer"
 import { shapeDataValidator, sampleText } from "./app/helpers/validator"
 
@@ -47,7 +46,7 @@ export default class App extends React.Component {
         return (
             <View>
                 <AppHeader/>
-                <From onSubmit={this.buttonSubmitHandler.bind(this)} error={this.state.error} isLoading={this.state.isLoading}/>
+                <Form onSubmit={this.buttonSubmitHandler.bind(this)} error={this.state.error} isLoading={this.state.isLoading}/>
                 <Shape data={this.state.shapeData}/>
             </View>
         );

@@ -1,5 +1,5 @@
 import React from 'react';
-import EquilateralTriangle from '../../../app/components/shape/equilateral-triangle/index';
+import EquilateralTriangle from '../../../app/components/Shape/EquilateralTriangle/index';
 
 import renderer from 'react-test-renderer';
 

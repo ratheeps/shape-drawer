@@ -1,5 +1,5 @@
 import React from 'react';
-import Oval from '../../../app/components/shape/oval/index';
+import Oval from '../../../app/components/Shape/Oval/index';
 
 import renderer from 'react-test-renderer';
 

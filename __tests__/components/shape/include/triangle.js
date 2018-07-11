@@ -1,5 +1,5 @@
 import React from 'react';
-import Triangle from '../../../../app/components/shape/include/triangle/index';
+import Triangle from '../../../../app/components/Support/Triangle/index';
 
 import renderer from 'react-test-renderer';
 

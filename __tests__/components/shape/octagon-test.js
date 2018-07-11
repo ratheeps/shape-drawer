@@ -1,5 +1,5 @@
 import React from 'react';
-import Hexagon from '../../../app/components/shape/hexagon/index';
+import Hexagon from '../../../app/components/Shape/Hexagon/index';
 
 import renderer from 'react-test-renderer';
 
