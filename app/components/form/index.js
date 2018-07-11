@@ -36,7 +36,7 @@ export default class From extends Component {
                     onChangeText={(value) => this.setState({value})}
                     shake={this.props.error ? true : false}
                 />
-                <FormValidationMessage style={styles.center}>{this.props.error}</FormValidationMessage>
+                <FormValidationMessage>{this.props.error}</FormValidationMessage>
                 <Button
                     raised
                     loading={this.props.isLoading}
