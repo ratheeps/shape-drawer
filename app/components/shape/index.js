@@ -8,7 +8,7 @@ import Parallelogram from "./parallelogram/index";
 import EquilateralTriangle from "./equilateral-triangle/index";
 import Pentagon from "./pentagon/index";
 import Hexagon from "./hexagon/index";
-// import Heptagon from "./heptagon";
+import Heptagon from "./heptagon";
 import Octagon from "./octagon/index";
 import Circle from "./circle/index";
 import Oval from "./oval/index";
@@ -25,7 +25,7 @@ export default class Shape extends Component {
                 { this.props.data.shape === 'equilateral triangle' ? <EquilateralTriangle   properties={this.props.data.properties}/> : '' }
                 { this.props.data.shape === 'pentagon' ? <Pentagon   properties={this.props.data.properties}/> : '' }
                 { this.props.data.shape === 'hexagon' ? <Hexagon   properties={this.props.data.properties}/> : '' }
-                {/*{ this.props.data.shape === 'heptagon' ? <Heptagon   properties={this.props.data.properties}/> : '' }*/}
+                { this.props.data.shape === 'heptagon' ? <Heptagon   properties={this.props.data.properties}/> : '' }
                 { this.props.data.shape === 'octagon' ? <Octagon   properties={this.props.data.properties}/> : '' }
                 { this.props.data.shape === 'circle' ? <Circle   properties={this.props.data.properties}/> : '' }
                 { this.props.data.shape === 'oval' ? <Oval   properties={this.props.data.properties}/> : '' }
