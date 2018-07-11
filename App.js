@@ -22,6 +22,7 @@ export default class App extends React.Component {
 
     process(data) {
         let value = data.value;
+        value = "Draw an heptagon with a side length of 200";
         if (value) {
             let shapeData = processText(value);
             let error = shapeDataValidator(shapeData);

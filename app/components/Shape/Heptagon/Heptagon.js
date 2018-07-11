@@ -1,58 +1,33 @@
 import React, {Component} from "react";
-import {Dimensions, View} from "react-native";
-import styles from "./styles";
-import Canvas from 'react-native-canvas';
-import colors from "../../../utils/colors";
+import {ART} from "react-native";
 
 const numberOfSides = 7;
-const rotateAngle = 90;
 
 export default class Heptagon extends Component {
 
-    polygon = (ctx, x, y, radius, sides, rotateAngle) => {
-        if (sides < 3) return;
-        var a = (Math.PI * 2) / sides;
-        ctx.translate(x, y);
-        ctx.rotate(rotateAngle);
-        ctx.moveTo(radius, 0);
-
-        for (var i = 1; i < sides; i++) {
-            ctx.lineTo(radius * Math.cos(a * i), radius * Math.sin(a * i));
+    generateART(){
+        console.log(this.props.properties.length);
+        let polygon = ART.Path().move(
+            this.props.properties.length * Math.cos(0),
+            this.props.properties.length * Math.sin(0)
+        );
+        for (let i = 1; i <= numberOfSides; i += 1) {
+            polygon.line(
+                this.props.properties.length * Math.cos((i * 2 * Math.PI) / numberOfSides),
+                this.props.properties.length * Math.sin((i * 2 * Math.PI) / numberOfSides)
+            );
+            polygon.close();
         }
-        ctx.scale(1, 2);
-        return ctx;
-    };
-
-    handleCanvas = (canvas) => {
-        let x = Dimensions.get('window').width;
-        let y = Dimensions.get('window').height;
-
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-            canvas.height = y;
-            canvas.width = x;
-
-            let size = this.props.properties.length;
-            let Xcenter = size + (x / size);
-            let Ycenter = size + 10;
-
-            ctx.beginPath();
-            // draw polygon
-            this.polygon(ctx, Xcenter, Ycenter, size, numberOfSides, rotateAngle);
-
-            ctx.strokeStyle = colors.shape;
-            ctx.fillStyle = colors.shape;
-            ctx.lineWidth = 1;
-            ctx.fill();
-            ctx.stroke();
-        }
-    };
+        return polygon;
+    }
 
     render() {
         return (
-            <View style={styles.container}>
-                <Canvas ref={this.handleCanvas} sideLength={this.props.properties.length} shape="heptagon"/>
-            </View>
+            <ART.Surface width={this.props.properties.length + " " +  3} height={this.props.properties.length + " " + 3}>
+                <ART.Group x={this.props.properties.length} y={this.props.properties.length / 3}>
+                    <ART.Shape d={this.generateART()}/>
+                </ART.Group>
+            </ART.Surface>
         );
     }
 }
