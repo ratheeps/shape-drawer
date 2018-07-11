@@ -42,6 +42,7 @@ export const shapes = {
 export const processText = (query) => {
     // find the shape
     let shape = findShape(query);
+    if (!shape) return {shape: null, properties:{}};
     // find the properties
     let properties = getValues(query, shape);
     return {shape, properties};
