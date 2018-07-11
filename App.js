@@ -26,9 +26,12 @@ export default class App extends React.Component {
             let shapeData = processText(value);
             let error = shapeDataValidator(shapeData);
             if (error){
-                this.setState({error : error});
+                this.setState({error});
             }else{
-                this.setState({shapeData : shapeData});
+                this.setState({
+                    shapeData,
+                    error
+                });
             }
         }else {
             this.setState({error : sampleText});

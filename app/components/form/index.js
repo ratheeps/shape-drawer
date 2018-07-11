@@ -27,7 +27,7 @@ export default class From extends Component {
 
     render() {
         return (
-            <View styles={styles.container}>
+            <View style={styles.container}>
                 <FormLabel>Enter text to draw the shapes</FormLabel>
                 <FormInput
                     multiline={true}
@@ -36,7 +36,7 @@ export default class From extends Component {
                     onChangeText={(value) => this.setState({value})}
                     shake={this.props.error ? true : false}
                 />
-                <FormValidationMessage styles={styles.center}>{this.props.error}</FormValidationMessage>
+                <FormValidationMessage style={styles.center}>{this.props.error}</FormValidationMessage>
                 <Button
                     raised
                     loading={this.props.isLoading}
