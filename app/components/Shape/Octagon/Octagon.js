@@ -5,6 +5,10 @@ import styles from './styles'
 
 export default class Octagon  extends Component {
 
+    /**
+     * generate octagon bar styles
+     * @returns {{width: number, height: *, backgroundColor: string}}
+     */
     getOctagonBar(){
         return {
             width: (this.props.properties.length / 2.41),

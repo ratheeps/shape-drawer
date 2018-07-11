@@ -3,6 +3,10 @@ import {View} from "react-native";
 import styles from './styles'
 
 export default class IsoscelesTriangle   extends Component {
+    /**
+     * generate triangle style
+     * @returns {{borderLeftWidth: number, borderRightWidth: number, borderBottomWidth: *}}
+     */
     getTriangleStyle(){
         return {
             borderLeftWidth: this.props.properties.width / 2,

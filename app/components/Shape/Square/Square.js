@@ -3,6 +3,10 @@ import {View} from "react-native";
 import styles from "./styles";
 
 export default class Square  extends Component {
+    /**
+     * generate Square styles
+     * @returns {{width: *, height: *}}
+     */
     getSquareStyle(){
         return {
             width: this.props.properties.length,

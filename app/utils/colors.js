@@ -1,3 +1,7 @@
+/**
+ * theme colors
+ * @type {{danger: string, primary1: string, primary2: string, shape: string, notSelectedText: string, lightText: string}}
+ */
 const colors = {
     danger: '#F44336',
     primary1: '#37474F',

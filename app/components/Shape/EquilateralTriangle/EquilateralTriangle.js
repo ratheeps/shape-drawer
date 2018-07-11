@@ -3,6 +3,10 @@ import {View} from "react-native";
 import styles from "./styles";
 
 export default class EquilateralTriangle  extends Component {
+    /**
+     * Generate triangle styles
+     * @returns {{borderLeftWidth: *, borderRightWidth: *, borderBottomWidth: *}}
+     */
     getTriangleStyle(){
         return {
             borderLeftWidth: this.props.properties.length,

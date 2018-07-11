@@ -3,6 +3,10 @@ import {View} from "react-native";
 import styles from "./styles";
 
 export default class Hexagon extends Component {
+    /**
+     * generate hexagon styles
+     * @returns {{width: *, height: number}}
+     */
     getHexagonStyles() {
         return {
             width: this.props.properties.length,
@@ -10,6 +14,10 @@ export default class Hexagon extends Component {
         }
     }
 
+    /**
+     * generate hexagon inner styles
+     * @returns {{width: *, height: number}}
+     */
     getHexagonInnerStyles() {
         return {
             width: this.props.properties.length,
@@ -17,6 +25,10 @@ export default class Hexagon extends Component {
         }
     }
 
+    /**
+     * generate after hexagon styles
+     * @returns {{bottom: number, borderLeftWidth: number, borderRightWidth: number, borderTopWidth: number}}
+     */
     getHexagonAfter() {
         return {
             bottom: -(this.props.properties.length / 4),
@@ -26,6 +38,10 @@ export default class Hexagon extends Component {
         }
     }
 
+    /**
+     * generate hexagon  before styles
+     * @returns {{top: number, borderLeftWidth: number, borderRightWidth: number, borderBottomWidth: number}}
+     */
     getHexagonBefore() {
         return {
             top: -(this.props.properties.length / 4),

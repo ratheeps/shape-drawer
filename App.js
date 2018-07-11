@@ -20,6 +20,10 @@ export default class App extends React.Component {
         this.process.bind(this);
     }
 
+    /**
+     * When click the button process the text
+     * @param data
+     */
     process(data) {
         Keyboard.dismiss();
         let value = data.value;
@@ -40,6 +44,10 @@ export default class App extends React.Component {
 
     }
 
+    /**
+     * Button submit handler
+     * @param data
+     */
     buttonSubmitHandler(data) {
         this.process(data);
     }

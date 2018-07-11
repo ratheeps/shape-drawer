@@ -12,6 +12,9 @@ export default class Form extends Component {
         };
     }
 
+    /**
+     * Form submit handler
+     */
     buttonPressHandler() {
         if (!this.state.value) {
             this.setState({

@@ -5,12 +5,17 @@ const numberOfSides = 7;
 
 export default class Heptagon extends Component {
 
+    /**
+     * Generate points
+     * @returns {*|Konva.Node}
+     */
     generateART(){
+        // create pointers.
         let polygon = ART.Path().move(
             this.props.properties.length * Math.cos(0),
             this.props.properties.length * Math.sin(0)
         );
-
+        // handle sides pointers.
         for (let i = 1; i <= numberOfSides; i += 1) {
             polygon.line(
                 this.props.properties.length * Math.cos((i * 2 * Math.PI) / numberOfSides),

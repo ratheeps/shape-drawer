@@ -1,3 +1,10 @@
+/**
+ * find the word between two words from a string
+ * @param string
+ * @param start
+ * @param end
+ * @returns {*}
+ */
 export const strBetween = (string, start, end) => {
     if (!string) return null;
     // create regular expression
@@ -9,6 +16,12 @@ export const strBetween = (string, start, end) => {
     return (results ? results[2] || null : null ).trim();
 };
 
+/**
+ * Find the next word from a string
+ * @param string
+ * @param word
+ * @returns {*}
+ */
 export const nextWord = (string, word) => {
     // find next words
     let nextWords = string.match(new RegExp(word + '\\s(\\w+)'));
